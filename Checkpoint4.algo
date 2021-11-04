@@ -1,0 +1,19 @@
+ALGORITHM algo4
+VAR
+    i,j,k:INTEGER
+    Tab : ARRAY_OF INTEGER
+    temp : INTEGER
+BEGIN
+    FOR i FROM 0 TO n-1 DO
+        FOR j FROM 0 TO i-1 DO
+            IF (tab[j>tab[i]]) THEN
+               temp = tab[i]
+               tab[i]=tab[i+1]
+               FOR k FROM i-1 TO 0 DO
+                   tab[k]=tab[k+1]
+               END_FOR 
+            END_IF
+        END_FOR
+    END_FOR
+
+END
